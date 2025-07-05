@@ -5,10 +5,9 @@ metadata:
   labels:
     app: db
 spec:
-  Type: ClusterIP
+  type: ClusterIP
   selector:
-    matchLabels:
-      app: db
+    app: db
   ports:
   - port: 5432
     targetPort: 5432

@@ -5,10 +5,9 @@ metadata:
   labels:
     app: result
 spec:
-  Type: NodePort
+  type: NodePort
   selector:
-    matchLabels:
-      app: result
+    app: result
   ports:
   - port: 8080
     targetPort: 8080

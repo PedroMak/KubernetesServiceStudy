@@ -7,8 +7,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    matchLabels:
-      app: redis
+    app: redis
   ports:
   - port: 6379
     targetPort: 6379
