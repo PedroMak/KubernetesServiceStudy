@@ -6,8 +6,9 @@ metadata:
     app: redis
 spec:
   replicas: 1
-  matchLabels:
-    app: redis
+  selector:
+    matchLabels:
+      app: redis
   template:
     metadata:
       name: redis

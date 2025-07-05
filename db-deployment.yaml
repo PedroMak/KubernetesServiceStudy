@@ -6,8 +6,9 @@ metadata:
     app: db
 spec:
   replicas: 1
-  matchLabels:
-    app: db
+  selector:
+    matchLabels:
+      app: db
   template:
     metadata:
       name: db
