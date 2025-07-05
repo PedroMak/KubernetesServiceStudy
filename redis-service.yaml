@@ -5,6 +5,7 @@ metadata:
   labels:
     app: redis
 spec:
+  type: ClusterIP
   selector:
     matchLabels:
       app: redis
